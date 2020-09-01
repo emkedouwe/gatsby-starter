@@ -1,5 +1,13 @@
-import React from "react"
+import React from "react";
+import SEO from "./../components/Global/Seo/";
 
-export default function Home() {
-  return <div>Hello world!</div>
+const Home = ({data}) => {
+  return (
+    <>
+      <SEO title="Home" description="Home" />
+      <div className="container">Hello world!</div>
+    </>
+  );
 }
+
+export default Home;
